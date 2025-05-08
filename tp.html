@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Date Invitation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffebef;
+            margin: 0;
+            font-family: 'Cursive', sans-serif;
+        }
+        .card {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+        }
+        .card h1 {
+            color: #e91e63;
+        }
+        .card p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #555;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #d81b60;
+        }
+        .thank-you {
+            display: none;
+            margin-top: 20px;
+            font-size: 22px;
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Hey Swati ❤️</h1>
+        <p>I would love to spend this Sunday with you.</p>
+        <p>Let's make it special with a beautiful date. 🌹✨</p>
+        <p>Are you ready to say yes? 😊</p>
+        <button class="button" onclick="showThankYou()">Yes, I am! 💖</button>
+        <div class="thank-you" id="thankYouMessage">
+            Thank you for saying Yes! 😍❤️
+        </div>
+    </div>
+
+    <script>
+        function showThankYou() {
+            const message = document.getElementById('thankYouMessage');
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
